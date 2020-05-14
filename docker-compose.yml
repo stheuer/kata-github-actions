@@ -1,0 +1,8 @@
+version: "3"
+services:
+  api:
+    image: docker.pkg.github.com/${GIT_OWNER}/${GIT_REPOSITORY}/${NAME}:${VERSION}
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080

@@ -1,0 +1,39 @@
+{
+  "name": "kata-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "presentation": "http-server -c-1 -o docs/presentation/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oktinaut/kata-github-actions.git"
+  },
+  "author": "Tim Okolowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oktinaut/kata-github-actions/issues"
+  },
+  "homepage": "https://github.com/oktinaut/kata-github-actions#readme",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.6",
+    "@types/jest": "^25.2.1",
+    "@types/morgan": "^1.9.0",
+    "fast-check": "^1.24.2",
+    "http-server": "^0.12.3",
+    "jest": "^25.5.4",
+    "jest-html-reporter": "^3.1.0",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
