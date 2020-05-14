@@ -1,0 +1,24 @@
+name: Publish on release
+
+# workflow is executed on every pus
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          make build
+
+      - name: Run Test
+        run: |
+          make test
+          - uses: actions/upload-artifact@v2
+          with:
+            name: test-report
+            path: output/test/report
