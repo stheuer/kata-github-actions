@@ -1,0 +1,20 @@
+name: Test on Push
+
+# workflow is executed on every pus
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  test:
+    runs-on: ubuntu-lates
+    step:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          make build
+
+      - name: Run Test
+        run: |
+          make test

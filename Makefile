@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 # Used for publishing docker images
-GIT_OWNER=oktinaut
+GIT_OWNER=stheuer
 GIT_REPOSITORY=kata-github-actions
 
 # Get npm package information
